@@ -44,7 +44,7 @@ def generate_sales_data(*series, betas, intercept=0.0, iterations=5, eps=0.2):
     return np.exp(ln_sales+noise)
 
 
-print(generate_sales_data([50000,5000,50000],[20125,19980,20622],[50000,49916,50000],betas=[0.005,0.15,.14,.5],intercept=3,iterations=50,eps=0.1))
+#print(generate_sales_data([50000,5000,50000],[20125,19980,20622],[50000,49916,50000],betas=[0.005,0.15,.14,.5],intercept=3,iterations=50,eps=0.1))
 
 def add_seasonality(x,cycles=3,h=0.1):
     v = np.linspace(0, cycles*2*np.pi, len(x))
